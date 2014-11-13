@@ -1,0 +1,9 @@
+CORRIGIR DATA E HORA ANTES DE INSTALAR QUALQUER COISA
+timedatectl set-time "YYYY-MM-DD HH:MM:SS"
+
+NODE:
+http://developer.toradex.com/knowledge-base/node-js-in-linux
+
+node packages to install:
+npm install azure-iot-device@latest
+

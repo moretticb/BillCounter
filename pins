@@ -1,0 +1,25 @@
+PINO	VIOLA	GPIO	SODIMM	KERNEL
+3.3v	4	-	-	-
+GND	7	-	-	-
+R	8	2_IO02	135	34
+G	9	1_IO15	98	15
+B	10	2_IO03	133	35
+BUTTON	11	2_IO20	103	52
+LDR	47	IN0	31	4*
+*Analog input
+
+---
+
+- EXPORTAR UM PINO
+cd /sys/class/gpio
+echo [KERNEL] > export
+
+- ENTRADA
+echo "in" > ./gpio[KERNEL]/direction
+cat ./gpio[KERNEL]/value #DIGITAL
+cat /sys/bus/iio/devices/iio\:device0/in_voltage[KERNEL]_raw #ANALOG
+
+- SAIDA
+echo "out" > ./gpio[KERNEL]/direction
+echo 1 > ./gpio[KERNEL]/value
+
