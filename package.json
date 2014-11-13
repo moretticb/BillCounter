@@ -1,0 +1,12 @@
+{
+    "name": "bill-counter",
+    "preferGlobal": true,
+    "version": "0.0.1",
+    "author": "Caio Benatti Moretti <caiodba@gmail.com>",
+    "description": "Color sensor for counting bills with cloud data management",
+    "license": "MIT",
+    "dependencies": {
+        "azure-iot-device": "latest"
+        "azure-iot-device-http": "latest"
+    }
+}
